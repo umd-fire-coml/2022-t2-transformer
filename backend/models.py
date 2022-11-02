@@ -17,7 +17,3 @@ class SongAugment(BaseModel):
     pitch: int
     speed: float
     noise: float
-
-# -12-12
-# 0.8-1.5
-# 0-0.1

@@ -29,21 +29,21 @@ const BACKEND_URI = 'http://localhost:8000';
 
 function App() {
   const [songSelectedIndex, setSongSelectedIndex] = useState(0);
-  const [songData, setSongData] = useState([]);
+  const [songAugmentation, setSongAugmentation] = useState({});
   const [pitchValue, setPitchValue] = useState(0);
   const [speedValue, setSpeedValue] = useState(1);
-  const [noiseValue, setNoiseValue] = useState(1);
+  const [noiseValue, setNoiseValue] = useState(0.015);
 
   let songs = [
     {
       title: 'Blinding Lights',
       artist: 'The Weeknd',
-      id: 0,
+      id: 545398139,
     },
     {
       title: 'Moth to a Flame',
       artist: 'The Weeknd',
-      id: 1,
+      id: 80456409,
     },
   ];
 
@@ -52,19 +52,23 @@ function App() {
   };
 
   const handleGenerateSong = async (event) => {
-    let res = await Axios.post(`${BACKEND_URI}/generate-song`, {
+    setSongAugmentation({});
+    let augmentation = {
       song: songs[songSelectedIndex],
       pitch: pitchValue,
       speed: speedValue,
       noise: noiseValue,
-    });
-    setSongData(res.data.song);
+    };
+    let res = await Axios.post(`${BACKEND_URI}/generate-song`, augmentation);
+    if (res.status === 200) {
+      augmentation['isAugmented'] = true;
+      setSongAugmentation(augmentation);
+      console.log(songAugmentation);
+    }
   };
 
   const handlePredictSong = async (event) => {
-    let res = await Axios.post(`${BACKEND_URI}/predict-song`, {
-      data: songData,
-    });
+    let res = await Axios.post(`${BACKEND_URI}/predict-song`, {});
     let songID = res.data.id;
   };
 
@@ -129,10 +133,10 @@ function App() {
               Augment Noise
             </Typography>
             <Slider
-              defaultValue={0.05}
+              defaultValue={0.015}
               min={0}
-              max={0.1}
-              step={0.025}
+              max={0.025}
+              step={0.005}
               valueLabelDisplay="auto"
               onChange={(event) => {
                 setNoiseValue(event.target.value);
@@ -149,12 +153,16 @@ function App() {
         </div>
         <div className="right">
           {/* Hear augmented song */}
-          {songData.length > 0 && (
+          {songAugmentation.isAugmented === true && (
             <div>
               <Typography variant="h3">Augmented Song</Typography>
               <div className="audioPlayer">
                 <ReactAudioPlayer
-                  src={`${BACKEND_URI}/file/song.ogg`}
+                  src={`${BACKEND_URI}/files/${songAugmentation.song.id}-${
+                    songAugmentation.pitch
+                  }-${songAugmentation.speed.toFixed(
+                    1
+                  )}-${songAugmentation.noise.toFixed(3)}.ogg`}
                   autoplay
                   controls
                 />
