@@ -5,9 +5,12 @@ import librosa
 API_URI = "https://itunes.apple.com/lookup"
 
 
-def get_song_by_id(song_augment: SongAugment, aug_fname: str):
-    res = requests.get(
-        f"{API_URI}?id={song_augment['song']['id']}&entity=song")
+def get_song_meta_by_id(song_id):
+    return requests.get(f"{API_URI}?id={song_id}&entity=song")
+
+
+def get_song_data_by_id(song_id: int, aug_fname: str):
+    res = get_song_meta_by_id(song_id)
     if res.status_code != 200:
         return
 

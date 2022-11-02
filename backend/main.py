@@ -6,7 +6,7 @@ import os
 
 # modules
 from models import Song, UnidentifiedSong, SongAugment
-from itunes_utils import get_song_by_id
+from itunes_utils import get_song_data_by_id, get_song_meta_by_id
 from augment_utils import augment_noise, augment_pitch, augment_speed
 
 
@@ -22,6 +22,12 @@ app.add_middleware(
     allow_methods=["*"],
     allow_headers=["*"],
 )
+
+
+def aug_fname(song_augment):
+    return f"files/{song_augment['song']['id']}-{song_augment['pitch']}-{song_augment['speed']}-{song_augment['noise']:.{3}f}.ogg"
+
+
 # Sample rate
 samplerate = 22050
 
@@ -41,15 +47,16 @@ def root():
 @app.post('/generate-song')
 def generate_song(song_augment: SongAugment):
     song_augment = song_augment.dict()
-    aug_fname = f"files/{song_augment['song']['id']}-{song_augment['pitch']}-{song_augment['speed']}-{song_augment['noise']:.{3}f}.ogg"
 
-    if not os.path.exists(aug_fname):
-        data = get_song_by_id(song_augment, aug_fname)
+    fname = aug_fname(song_augment)
+
+    if not os.path.exists(fname):
+        data = get_song_data_by_id(song_augment['song']['id'], fname)
         data = augment_noise(data, song_augment['noise'])
         data = augment_pitch(data, song_augment['pitch'], samplerate)
         data = augment_speed(data, song_augment['speed'])
 
-        sf.write(aug_fname, data, samplerate,
+        sf.write(fname, data, samplerate,
                  format='ogg', subtype='vorbis')
 
     return 200
