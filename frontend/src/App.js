@@ -193,7 +193,7 @@ function App() {
             <Slider
               defaultValue={0.015}
               min={0}
-              max={0.025}
+              max={0.03}
               step={0.005}
               valueLabelDisplay="auto"
               onChange={(event) => {
