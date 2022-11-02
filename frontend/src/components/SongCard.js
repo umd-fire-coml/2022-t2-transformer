@@ -51,7 +51,7 @@ export default function SongCard({
       </Box>
       <CardMedia
         component="img"
-        sx={{ width: 151, height: 151 }}
+        sx={{ width: 151, height: 151, marginLeft: 'auto' }}
         image={artworkUrl100}
         alt="artwork"
       />

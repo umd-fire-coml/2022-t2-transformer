@@ -39,14 +39,54 @@ function App() {
 
   let songs = [
     {
-      title: 'Blinding Lights',
-      artist: 'The Weeknd',
-      id: 545398139,
+      title: '7 rings',
+      artist: 'Ariana Grande',
+      id: 1450330685,
     },
     {
-      title: 'Moth to a Flame',
+      title: 'God is a woman',
+      artist: 'Ariana Grande',
+      id: 1399202954,
+    },
+    // {
+    //   title: 'As It Was',
+    //   artist: 'Harry Styles',
+    //   id: 1615585008,
+    // },
+    // {
+    //   title: 'Watermelon Sugar',
+    //   artist: 'Harry Styles',
+    //   id: 1485802967,
+    // },
+    {
+      title: 'Hold On',
+      artist: 'Justin Bieber',
+      id: 1561058477,
+    },
+    {
+      title: 'Intentions (feat. Quavo)',
+      artist: 'Justin Bieber',
+      id: 1496639586,
+    },
+    {
+      title: 'STAY',
+      artist: 'The Kid LAROI',
+      id: 1574378625,
+    },
+    {
+      title: 'BEST FOR ME',
+      artist: 'The Kid LAROI',
+      id: 1578326275,
+    },
+    {
+      title: 'In Your Eyes',
       artist: 'The Weeknd',
-      id: 80456409,
+      id: 1499378612,
+    },
+    {
+      title: 'Die For You',
+      artist: 'The Weeknd',
+      id: 1440872304,
     },
   ];
 
@@ -71,25 +111,23 @@ function App() {
   };
 
   const handlePredictSong = async (event) => {
-    let res = await Axios.post(`${BACKEND_URI}/predict-song`, {
-      song: songs[songSelectedIndex],
-      pitch: pitchValue,
-      speed: speedValue,
-      noise: noiseValue,
-    });
-    let songId = res.data.song_id;
-
-    res = await Axios.get(`${BACKEND_URI}/song-meta?song_id=${songId}`);
-    const { artistName, artworkUrl100, trackName, trackViewUrl } =
-      res.data.results[0];
-    setPredictedSongMetadata({
-      artistName,
-      artworkUrl100,
-      trackName,
-      trackViewUrl,
-    });
-    setPredictedSongId(songId);
-    console.log(predictedSongMetadata);
+    // let res = await Axios.post(`${BACKEND_URI}/predict-song`, {
+    //   song: songs[songSelectedIndex],
+    //   pitch: pitchValue,
+    //   speed: speedValue,
+    //   noise: noiseValue,
+    // });
+    // let songId = res.data.song_id;
+    // res = await Axios.get(`${BACKEND_URI}/song-meta?song_id=${songId}`);
+    // const { artistName, artworkUrl100, trackName, trackViewUrl } =
+    //   res.data.results[0];
+    // setPredictedSongMetadata({
+    //   artistName,
+    //   artworkUrl100,
+    //   trackName,
+    //   trackViewUrl,
+    // });
+    // setPredictedSongId(songId);
   };
 
   return (
