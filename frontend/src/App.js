@@ -11,6 +11,7 @@ import {
 import ReactAudioPlayer from 'react-audio-player';
 import Axios from 'axios';
 import { ThemeProvider, createTheme } from '@mui/material/styles';
+import SongCard from './components/SongCard';
 
 import './App.css';
 import '@fontsource/roboto/300.css';
@@ -33,6 +34,8 @@ function App() {
   const [pitchValue, setPitchValue] = useState(0);
   const [speedValue, setSpeedValue] = useState(1);
   const [noiseValue, setNoiseValue] = useState(0.015);
+  const [predictedSongId, setPredictedSongId] = useState(-1);
+  const [predictedSongMetadata, setPredictedSongMetadata] = useState({});
 
   let songs = [
     {
@@ -53,6 +56,7 @@ function App() {
 
   const handleGenerateSong = async (event) => {
     setSongAugmentation({});
+    setPredictedSongId(-1);
     let augmentation = {
       song: songs[songSelectedIndex],
       pitch: pitchValue,
@@ -63,13 +67,29 @@ function App() {
     if (res.status === 200) {
       augmentation['isAugmented'] = true;
       setSongAugmentation(augmentation);
-      console.log(songAugmentation);
     }
   };
 
   const handlePredictSong = async (event) => {
-    let res = await Axios.post(`${BACKEND_URI}/predict-song`, {});
-    let songID = res.data.id;
+    let res = await Axios.post(`${BACKEND_URI}/predict-song`, {
+      song: songs[songSelectedIndex],
+      pitch: pitchValue,
+      speed: speedValue,
+      noise: noiseValue,
+    });
+    let songId = res.data.song_id;
+
+    res = await Axios.get(`${BACKEND_URI}/song-meta?song_id=${songId}`);
+    const { artistName, artworkUrl100, trackName, trackViewUrl } =
+      res.data.results[0];
+    setPredictedSongMetadata({
+      artistName,
+      artworkUrl100,
+      trackName,
+      trackViewUrl,
+    });
+    setPredictedSongId(songId);
+    console.log(predictedSongMetadata);
   };
 
   return (
@@ -163,7 +183,6 @@ function App() {
                   }-${songAugmentation.speed.toFixed(
                     1
                   )}-${songAugmentation.noise.toFixed(3)}.ogg`}
-                  autoplay
                   controls
                 />
               </div>
@@ -173,6 +192,19 @@ function App() {
               >
                 Predict
               </Button>
+            </div>
+          )}
+          {predictedSongId >= 0 && (
+            <div>
+              <Typography variant="h3" sx={{ marginTop: '30px' }}>
+                Predicted Song
+              </Typography>
+              <SongCard
+                artistName={predictedSongMetadata.artistName}
+                artworkUrl100={predictedSongMetadata.artworkUrl100}
+                trackName={predictedSongMetadata.trackName}
+                trackViewUrl={predictedSongMetadata.trackViewUrl}
+              />
             </div>
           )}
         </div>
