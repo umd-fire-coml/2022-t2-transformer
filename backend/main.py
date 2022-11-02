@@ -5,7 +5,7 @@ import soundfile as sf
 import os
 
 # modules
-from models import Song, UnidentifiedSong, SongAugment
+from models import SongAugment
 from itunes_utils import get_song_data_by_id, get_song_meta_by_id
 from augment_utils import augment_noise, augment_pitch, augment_speed
 
@@ -68,5 +68,17 @@ def serve_file(filename: str):
 
 
 @app.post('/predict-song')
-def predict_song(song):
-    return
+def predict_song(song_augment: SongAugment):
+    song_augment = song_augment.dict()
+    fname = aug_fname(song_augment)
+
+    # do model predict the id
+    id = song_augment['song']['id']
+
+    return {'song_id': id}
+
+
+@app.get('/song-meta')
+def serve_file(song_id: int):
+    print(song_id)
+    return get_song_meta_by_id(song_id).json()
