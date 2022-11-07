@@ -1,5 +1,6 @@
 from enum import Enum
 import os
+import numpy as np
 import fastai
 from musicautobot.numpy_encode import *
 from musicautobot.config import *
@@ -19,7 +20,10 @@ embedding = midi2idxenc('Comic Relief.mid', MusicVocab.create())
 
 print(list(MusicVocab.create().stoi.items()))
 print(embedding)
-output = idxenc2stream(embedding, MusicVocab.create())
+x = np.load("data/x_0.npy")
+print(x[0] * 311)
+output = idxenc2stream((x[0] * 311).astype("int"), MusicVocab.create())
 output.write('midi',"output.mid")
+
 
 # test: it merges all the streams into one and makes the tempo 120, which is suboptimal
