@@ -1,3 +1,17 @@
+import os
+import librosa
+import librosa.effects
+import numpy as np
+import tensorflow as tf
+from tensorflow import keras
+from tensorflow.keras import layers
+from tensorflow.keras import backend as K
+import warnings
+warnings.filterwarnings("ignore")
+
+SR = 22050
+INPUT_SHAPE = (1025, 130)
+
 # Hyperparameters
 learning_rate = 0.001
 weight_decay = 0.0001
@@ -14,21 +28,6 @@ transformer_units = [
 transformer_layers = 1 #8
 mlp_head_units = [16, 8] #[512, 256] #[2048, 1024]
 embedding_length = 16 #128
-
-import os
-import librosa
-import librosa.effects
-import numpy as np
-import tensorflow as tf
-from tensorflow import keras
-from tensorflow.keras import layers
-from tensorflow.keras import backend as K
-import warnings
-warnings.filterwarnings("ignore")
-
-SR = 22050
-INPUT_SHAPE = (1025, 130)
-
 
 def mlp(x, hidden_units, dropout_rate):
     for units in hidden_units:
