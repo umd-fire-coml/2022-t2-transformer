@@ -137,7 +137,7 @@ def compile_model():
 
     model = keras.Model([in_a, in_p, in_n], triplet_loss_layer)
     model.compile(loss=None, optimizer='adam')#optimizer=tf.keras.optimizers.Adam(learning_rate=1e-3), loss=None)
-    return model.get_layer('Embedding')
+    return model
 
 
 def embedding_distance(embedding1, embedding2):
