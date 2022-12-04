@@ -4,10 +4,11 @@ from fastapi.responses import FileResponse
 import soundfile as sf
 import numpy as np
 import os
+import librosa
 
 # modules
 from models import SongAugment
-from model import compile_model
+from model import compile_model, guess
 from itunes_utils import get_song_data_by_id, get_song_meta_by_id
 from augment_utils import augment_noise, augment_pitch, augment_speed
 
@@ -37,13 +38,13 @@ samplerate = 22050
 @app.on_event('startup')
 def startup():
     global base_model, embeddings
-    print("starting up")
+    print("starting up...")
     # would load model here
     model = compile_model()
     model.load_weights('./model-checkpoints/epoch007_loss-97146000.000.hdf5')
     base_model = model.get_layer('Embedding')
-    embeddings = np.load('./embeddings/emb1.npy')
-    print("done")
+    embeddings = np.load('./embeddings/emb1.npy', allow_pickle=True)
+    print("done starting up...")
 
 
 @app.get('/')
@@ -78,10 +79,22 @@ def predict_song(song_augment: SongAugment):
     song_augment = song_augment.dict()
     fname = aug_fname(song_augment)
 
-    # do model predict the id
-    id = song_augment['song']['id']
+    SR = 22_050
+    song, sr = librosa.load(fname, sr=SR)
+    clip_seconds = 3
+    
+    ids = []
+    for i in range(0, len(song) - SR*clip_seconds, SR*clip_seconds):
+        predicted_id, dist = guess(base_model, embeddings, song[i:i+(SR*clip_seconds)])
+        ids.append((predicted_id, float(dist)))
+        
+    
+    song = song[:SR*clip_seconds]
 
-    return {'song_id': id}
+    # do model predict the id
+    predicted_id, dist = guess(base_model, embeddings, song)
+    
+    return {'song_id': predicted_id, 'ids': ids}
 
 
 @app.get('/song-meta')

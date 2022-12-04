@@ -111,23 +111,23 @@ function App() {
   };
 
   const handlePredictSong = async (event) => {
-    // let res = await Axios.post(`${BACKEND_URI}/predict-song`, {
-    //   song: songs[songSelectedIndex],
-    //   pitch: pitchValue,
-    //   speed: speedValue,
-    //   noise: noiseValue,
-    // });
-    // let songId = res.data.song_id;
-    // res = await Axios.get(`${BACKEND_URI}/song-meta?song_id=${songId}`);
-    // const { artistName, artworkUrl100, trackName, trackViewUrl } =
-    //   res.data.results[0];
-    // setPredictedSongMetadata({
-    //   artistName,
-    //   artworkUrl100,
-    //   trackName,
-    //   trackViewUrl,
-    // });
-    // setPredictedSongId(songId);
+    let res = await Axios.post(`${BACKEND_URI}/predict-song`, {
+      song: songs[songSelectedIndex],
+      pitch: pitchValue,
+      speed: speedValue,
+      noise: noiseValue,
+    });
+    let songId = res.data.song_id;
+    res = await Axios.get(`${BACKEND_URI}/song-meta?song_id=${songId}`);
+    const { artistName, artworkUrl100, trackName, trackViewUrl } =
+      res.data.results[0];
+    setPredictedSongMetadata({
+      artistName,
+      artworkUrl100,
+      trackName,
+      trackViewUrl,
+    });
+    setPredictedSongId(songId);
   };
 
   return (
@@ -151,7 +151,7 @@ function App() {
                     onClick={(event) => handleListItemClick(event, i)}
                     key={i}
                   >
-                    <ListItemText primary={song.title} />
+                    <ListItemText primary={song.title + " - " + song.artist} />
                   </ListItemButton>
                 ))}
               </List>
@@ -186,7 +186,7 @@ function App() {
               }}
             />
 
-            {/* Speed */}
+            {/* Noise */}
             <Typography variant="h4" align="left">
               Augment Noise
             </Typography>
