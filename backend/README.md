@@ -12,9 +12,18 @@
      source .venv/bin/activate
      ```
 1. Install dependencies
+   If on apple silicon chip:
+
    ```bash
-   pip install -U pip uvicorn -r requirements.txt
+   pip install -U pip uvicorn tensorflow-macos -r requirements.txt
    ```
+
+   For other computers
+
+   ```bash
+   pip install -U pip uvicorn tensorflow -r requirements.txt
+   ```
+
 1. Start dev server
    ```bash
    python3 -m uvicorn main:app --reload
