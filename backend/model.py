@@ -19,15 +19,16 @@ batch_size = 4
 num_epochs = 10
 patch_width = 1
 num_patches = INPUT_SHAPE[1] // patch_width
-projection_dim = 16 #256
+projection_dim = 16  # 256
 num_heads = 4
 transformer_units = [
     projection_dim * 2,
     projection_dim,
 ]
-transformer_layers = 1 #8
-mlp_head_units = [16, 8] #[512, 256] #[2048, 1024]
-embedding_length = 16 #128
+transformer_layers = 1  # 8
+mlp_head_units = [16, 8]  # [512, 256] #[2048, 1024]
+embedding_length = 16  # 128
+
 
 def mlp(x, hidden_units, dropout_rate):
     for units in hidden_units:
@@ -48,7 +49,8 @@ class Patches(layers.Layer):
 
     def call(self, inputs):
         batch_size = tf.shape(inputs)[0]
-        inp = tf.reshape(inputs, [batch_size, INPUT_SHAPE[0], INPUT_SHAPE[1], 1])
+        inp = tf.reshape(
+            inputs, [batch_size, INPUT_SHAPE[0], INPUT_SHAPE[1], 1])
         patches = tf.image.extract_patches(
             images=inp,
             sizes=[1, INPUT_SHAPE[0], self.patch_width, 1],
@@ -69,12 +71,13 @@ class PatchEncoder(layers.Layer):
         self.position_embedding = layers.Embedding(
             input_dim=num_patches, output_dim=projection_dim
         )
-    
+
     def call(self, patch):
         positions = tf.range(start=0, limit=self.num_patches, delta=1)
         proj = self.projection(patch)
         pose = self.position_embedding(positions)
-        encoded = tf.reshape(proj, [-1, num_patches, projection_dim]) #should be 'encoded = proj + pose'
+        # should be 'encoded = proj + pose'
+        encoded = tf.reshape(proj, [-1, num_patches, projection_dim])
         return encoded
 
 
@@ -92,7 +95,7 @@ class TripletLossLayer(layers.Layer):
         a, p, n = inputs
         p_dist = K.sum(K.square(a-p), axis=-1)
         n_dist = K.sum(K.square(a-n), axis=-1)
-        #return K.sum(K.maximum(p_dist - n_dist + self.alpha, 0), axis=0)
+        # return K.sum(K.maximum(p_dist - n_dist + self.alpha, 0), axis=0)
         return K.sum(p_dist - n_dist + self.alpha, axis=0)
 
     def call(self, inputs):
@@ -124,7 +127,8 @@ def compile_model():
     representation = layers.LayerNormalization(epsilon=1e-6)(encoded)
     representation = layers.Flatten()(representation)
     representation = layers.Dropout(0.5)(representation)
-    features = mlp(representation, hidden_units=mlp_head_units, dropout_rate=0.5)
+    features = mlp(representation, hidden_units=mlp_head_units,
+                   dropout_rate=0.5)
     output = layers.Dense(embedding_length)(features)
 
     embedding = keras.Model(input, output, name="Embedding")
@@ -133,10 +137,12 @@ def compile_model():
     emb_p = embedding(in_p)
     emb_n = embedding(in_n)
 
-    triplet_loss_layer = TripletLossLayer(alpha=0.4, name='triplet_loss_layer')([emb_a, emb_p, emb_n])
+    triplet_loss_layer = TripletLossLayer(
+        alpha=0.4, name='triplet_loss_layer')([emb_a, emb_p, emb_n])
 
     model = keras.Model([in_a, in_p, in_n], triplet_loss_layer)
-    model.compile(loss=None, optimizer='adam')#optimizer=tf.keras.optimizers.Adam(learning_rate=1e-3), loss=None)
+    # optimizer=tf.keras.optimizers.Adam(learning_rate=1e-3), loss=None)
+    model.compile(loss=None, optimizer='adam')
     return model
 
 
@@ -147,7 +153,8 @@ def embedding_distance(embedding1, embedding2):
 # Function to make a guess based on a 3 second numpy snippet
 def guess(model, embeddings, snippet):
     inp = librosa.stft(snippet)
-    emb = model.predict(tf.reshape(inp, [-1, inp.shape[0], inp.shape[1]]), verbose=0)
+    emb = model.predict(tf.reshape(
+        inp, [-1, inp.shape[0], inp.shape[1]]), verbose=0)
     emb_distances = [(embedding_distance(emb, e), id) for e, id in embeddings]
     shortest_distances = sorted(emb_distances)
     dist, id = shortest_distances[0]

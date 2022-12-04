@@ -2,10 +2,12 @@ from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import FileResponse
 import soundfile as sf
+import numpy as np
 import os
 
 # modules
 from models import SongAugment
+from model import compile_model
 from itunes_utils import get_song_data_by_id, get_song_meta_by_id
 from augment_utils import augment_noise, augment_pitch, augment_speed
 
@@ -34,9 +36,14 @@ samplerate = 22050
 
 @app.on_event('startup')
 def startup():
+    global base_model, embeddings
     print("starting up")
     # would load model here
-    return
+    model = compile_model()
+    model.load_weights('./model-checkpoints/epoch007_loss-97146000.000.hdf5')
+    base_model = model.get_layer('Embedding')
+    embeddings = np.load('./embeddings/emb1.npy')
+    print("done")
 
 
 @app.get('/')
@@ -58,7 +65,6 @@ def generate_song(song_augment: SongAugment):
 
         sf.write(fname, data, samplerate,
                  format='ogg', subtype='vorbis')
-
     return 200
 
 
