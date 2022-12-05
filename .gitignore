@@ -130,3 +130,6 @@ dmypy.json
 
 # mac files
 .DS_Store
+
+song-clip-triplets.zip
+triplets/
