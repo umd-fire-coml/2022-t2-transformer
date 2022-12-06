@@ -1,3 +1,20 @@
+## Usage
+**From the root directory**
+
+1. Setup environment
+   ```bash
+   bash scripts/setup_env.sh
+   ```
+1. Activate environment
+   ```
+   source .venv/bin/activate
+1. Run server
+   ```bash
+   cd backend
+   uvicorn main:app --reload
+   ```
+
+
 ## Development
 
 **First, make sure you are in the `backend/` directory**
@@ -15,13 +32,13 @@
    If on apple silicon chip:
 
    ```bash
-   pip install -U pip uvicorn tensorflow-macos -r requirements.txt
+   pip install -U pip uvicorn -r requirements.txt tensorflow-macos
    ```
 
    For other computers
 
    ```bash
-   pip install -U pip uvicorn tensorflow -r requirements.txt
+   pip install -U pip uvicorn -r requirements.txt tensorflow
    ```
 
 1. Start dev server
