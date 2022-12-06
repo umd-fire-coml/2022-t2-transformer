@@ -6,4 +6,4 @@ Our project is a song recognition model which has the ability to take in augment
 
 # Directory Guide
 
-The directory guide can be accessed [here] (./directory.md)
+The directory guide can be accessed [here] (https://github.com/umd-fire-coml/2022-t2-transformer/blob/readme-update/directory.md)
