@@ -28,7 +28,7 @@ app.add_middleware(
 
 
 def aug_fname(song_augment):
-    return f"files/{song_augment['song']['id']}-{song_augment['pitch']}-{song_augment['speed']}-{song_augment['noise']:.{3}f}.ogg"
+    return os.path.join('files', f"{song_augment['song']['id']}-{song_augment['pitch']}-{song_augment['speed']}-{song_augment['noise']:.{3}f}.ogg")
 
 
 # Sample rate
@@ -41,9 +41,9 @@ def startup():
     print("starting up...")
     # would load model here
     model = compile_model()
-    model.load_weights('./model-checkpoints/epoch007_loss-97146000.000.hdf5')
+    model.load_weights(os.path.join('.', 'model-checkpoints', 'epoch007_loss-97146000.000.hdf5'))
     base_model = model.get_layer('Embedding')
-    embeddings = np.load('./embeddings/emb1.npy', allow_pickle=True)
+    embeddings = np.load(os.path.join('.', 'embeddings', 'emb1.npy'), allow_pickle=True)
     print("done starting up...")
 
 
@@ -71,7 +71,7 @@ def generate_song(song_augment: SongAugment):
 
 @app.get('/files/{filename}')
 def serve_file(filename: str):
-    return FileResponse(f'files/{filename}', filename=filename)
+    return FileResponse(os.path.join('files', filename), filename=filename)
 
 
 @app.post('/predict-song')
