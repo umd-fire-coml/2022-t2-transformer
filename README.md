@@ -6,4 +6,4 @@ Our project is a song recognition model which has the ability to take in augment
 
 # Directory Guide
 
-The directory guide can be accessed [here](./directory.md).
+The directory guide can be accessed [here](markdown/directory.md).
