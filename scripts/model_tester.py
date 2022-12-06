@@ -22,7 +22,7 @@ print(model.summary())
 model.load_weights(WEIGHTS_PATH)
 base_model = model.get_layer('Embedding')
 
-if len(sys.argv >= 3):
+if len(sys.argv) >= 3:
     print(f"Loading embeddings from {sys.argv[2]}")
     embeddings = np.load(sys.argv[2], allow_pickle=True)
 else:
