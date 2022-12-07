@@ -13,8 +13,9 @@ The directory guide can be accessed [here](markdown/directory.md).
 by Steven Zhang, Rahul Dagar, and Kofi Boateng
 
 Our project is a MIDI generation model that takes in the beginning of a MIDI file as a sample and generates original music based off of the given sample. We use an encoder package to compress MIDIs into integer arrays to feed into the model. One note is encoded by 2 integers representing note type and duration. The model takes an input of 50 encoded notes and predicts the next note. To generate more, we loop this process by appending the generated note to the array and feeding the most recent 50 notes back into the model. To train the model, we used [this dataset](https://github.com/lucasnfe/adl-piano-midi).
+
 Demo
 
 ## Further info
 
-Detailed project-specific information can  be accessed [here](MIDI-song-extender/README.md)
+Detailed project-specific information can  be seen [here](MIDI-song-extender).
