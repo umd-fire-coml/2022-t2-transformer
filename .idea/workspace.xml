@@ -1,0 +1,458 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="4259db1c-0b0c-435d-843f-22172d6c25a1" name="Changes" comment="updated repo layout">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MIDI-song-extender/generator.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MIDI-song-extender/logs/fit/events.out.tfevents.1667969070.LAPTOP-HJGTML17.profile-empty" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MIDI-song-extender/logs/fit/plugins/profile/2022_11_09_04_44_30/LAPTOP-HJGTML17.input_pipeline.pb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MIDI-song-extender/logs/fit/plugins/profile/2022_11_09_04_44_30/LAPTOP-HJGTML17.memory_profile.json.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MIDI-song-extender/logs/fit/plugins/profile/2022_11_09_04_44_30/LAPTOP-HJGTML17.overview_page.pb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MIDI-song-extender/logs/fit/plugins/profile/2022_11_09_04_44_30/LAPTOP-HJGTML17.tensorflow_stats.pb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MIDI-song-extender/logs/fit/plugins/profile/2022_11_09_04_44_30/LAPTOP-HJGTML17.trace.json.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MIDI-song-extender/logs/fit/plugins/profile/2022_11_09_04_44_30/LAPTOP-HJGTML17.xplane.pb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MIDI-song-extender/logs/fit/plugins/profile/2022_11_09_04_46_03/LAPTOP-HJGTML17.input_pipeline.pb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MIDI-song-extender/logs/fit/plugins/profile/2022_11_09_04_46_03/LAPTOP-HJGTML17.kernel_stats.pb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MIDI-song-extender/logs/fit/plugins/profile/2022_11_09_04_46_03/LAPTOP-HJGTML17.memory_profile.json.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MIDI-song-extender/logs/fit/plugins/profile/2022_11_09_04_46_03/LAPTOP-HJGTML17.overview_page.pb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MIDI-song-extender/logs/fit/plugins/profile/2022_11_09_04_46_03/LAPTOP-HJGTML17.tensorflow_stats.pb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MIDI-song-extender/logs/fit/plugins/profile/2022_11_09_04_46_03/LAPTOP-HJGTML17.trace.json.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MIDI-song-extender/logs/fit/plugins/profile/2022_11_09_04_46_03/LAPTOP-HJGTML17.xplane.pb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MIDI-song-extender/logs/fit/plugins/profile/2022_11_09_04_47_40/LAPTOP-HJGTML17.input_pipeline.pb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MIDI-song-extender/logs/fit/plugins/profile/2022_11_09_04_47_40/LAPTOP-HJGTML17.kernel_stats.pb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MIDI-song-extender/logs/fit/plugins/profile/2022_11_09_04_47_40/LAPTOP-HJGTML17.memory_profile.json.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MIDI-song-extender/logs/fit/plugins/profile/2022_11_09_04_47_40/LAPTOP-HJGTML17.overview_page.pb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MIDI-song-extender/logs/fit/plugins/profile/2022_11_09_04_47_40/LAPTOP-HJGTML17.tensorflow_stats.pb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MIDI-song-extender/logs/fit/plugins/profile/2022_11_09_04_47_40/LAPTOP-HJGTML17.trace.json.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MIDI-song-extender/logs/fit/plugins/profile/2022_11_09_04_47_40/LAPTOP-HJGTML17.xplane.pb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MIDI-song-extender/logs/fit/plugins/profile/2022_11_09_04_48_59/LAPTOP-HJGTML17.input_pipeline.pb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MIDI-song-extender/logs/fit/plugins/profile/2022_11_09_04_48_59/LAPTOP-HJGTML17.kernel_stats.pb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MIDI-song-extender/logs/fit/plugins/profile/2022_11_09_04_48_59/LAPTOP-HJGTML17.memory_profile.json.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MIDI-song-extender/logs/fit/plugins/profile/2022_11_09_04_48_59/LAPTOP-HJGTML17.overview_page.pb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MIDI-song-extender/logs/fit/plugins/profile/2022_11_09_04_48_59/LAPTOP-HJGTML17.tensorflow_stats.pb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MIDI-song-extender/logs/fit/plugins/profile/2022_11_09_04_48_59/LAPTOP-HJGTML17.trace.json.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MIDI-song-extender/logs/fit/plugins/profile/2022_11_09_04_48_59/LAPTOP-HJGTML17.xplane.pb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MIDI-song-extender/logs/fit/plugins/profile/2022_11_09_04_50_33/LAPTOP-HJGTML17.input_pipeline.pb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MIDI-song-extender/logs/fit/plugins/profile/2022_11_09_04_50_33/LAPTOP-HJGTML17.kernel_stats.pb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MIDI-song-extender/logs/fit/plugins/profile/2022_11_09_04_50_33/LAPTOP-HJGTML17.memory_profile.json.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MIDI-song-extender/logs/fit/plugins/profile/2022_11_09_04_50_33/LAPTOP-HJGTML17.overview_page.pb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MIDI-song-extender/logs/fit/plugins/profile/2022_11_09_04_50_33/LAPTOP-HJGTML17.tensorflow_stats.pb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MIDI-song-extender/logs/fit/plugins/profile/2022_11_09_04_50_33/LAPTOP-HJGTML17.trace.json.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MIDI-song-extender/logs/fit/plugins/profile/2022_11_09_04_50_33/LAPTOP-HJGTML17.xplane.pb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MIDI-song-extender/logs/fit/plugins/profile/2022_11_09_04_52_11/LAPTOP-HJGTML17.input_pipeline.pb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MIDI-song-extender/logs/fit/plugins/profile/2022_11_09_04_52_11/LAPTOP-HJGTML17.kernel_stats.pb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MIDI-song-extender/logs/fit/plugins/profile/2022_11_09_04_52_11/LAPTOP-HJGTML17.memory_profile.json.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MIDI-song-extender/logs/fit/plugins/profile/2022_11_09_04_52_11/LAPTOP-HJGTML17.overview_page.pb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MIDI-song-extender/logs/fit/plugins/profile/2022_11_09_04_52_11/LAPTOP-HJGTML17.tensorflow_stats.pb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MIDI-song-extender/logs/fit/plugins/profile/2022_11_09_04_52_11/LAPTOP-HJGTML17.trace.json.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MIDI-song-extender/logs/fit/plugins/profile/2022_11_09_04_52_11/LAPTOP-HJGTML17.xplane.pb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MIDI-song-extender/logs/fit/plugins/profile/2022_11_09_04_54_17/LAPTOP-HJGTML17.input_pipeline.pb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MIDI-song-extender/logs/fit/plugins/profile/2022_11_09_04_54_17/LAPTOP-HJGTML17.kernel_stats.pb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MIDI-song-extender/logs/fit/plugins/profile/2022_11_09_04_54_17/LAPTOP-HJGTML17.memory_profile.json.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MIDI-song-extender/logs/fit/plugins/profile/2022_11_09_04_54_17/LAPTOP-HJGTML17.overview_page.pb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MIDI-song-extender/logs/fit/plugins/profile/2022_11_09_04_54_17/LAPTOP-HJGTML17.tensorflow_stats.pb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MIDI-song-extender/logs/fit/plugins/profile/2022_11_09_04_54_17/LAPTOP-HJGTML17.trace.json.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MIDI-song-extender/logs/fit/plugins/profile/2022_11_09_04_54_17/LAPTOP-HJGTML17.xplane.pb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MIDI-song-extender/logs/fit/plugins/profile/2022_11_09_04_55_46/LAPTOP-HJGTML17.input_pipeline.pb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MIDI-song-extender/logs/fit/plugins/profile/2022_11_09_04_55_46/LAPTOP-HJGTML17.kernel_stats.pb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MIDI-song-extender/logs/fit/plugins/profile/2022_11_09_04_55_46/LAPTOP-HJGTML17.memory_profile.json.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MIDI-song-extender/logs/fit/plugins/profile/2022_11_09_04_55_46/LAPTOP-HJGTML17.overview_page.pb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MIDI-song-extender/logs/fit/plugins/profile/2022_11_09_04_55_46/LAPTOP-HJGTML17.tensorflow_stats.pb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MIDI-song-extender/logs/fit/plugins/profile/2022_11_09_04_55_46/LAPTOP-HJGTML17.trace.json.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MIDI-song-extender/logs/fit/plugins/profile/2022_11_09_04_55_46/LAPTOP-HJGTML17.xplane.pb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MIDI-song-extender/logs/fit/plugins/profile/2022_11_09_05_19_17/LAPTOP-HJGTML17.input_pipeline.pb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MIDI-song-extender/logs/fit/plugins/profile/2022_11_09_05_19_17/LAPTOP-HJGTML17.kernel_stats.pb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MIDI-song-extender/logs/fit/plugins/profile/2022_11_09_05_19_17/LAPTOP-HJGTML17.memory_profile.json.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MIDI-song-extender/logs/fit/plugins/profile/2022_11_09_05_19_17/LAPTOP-HJGTML17.overview_page.pb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MIDI-song-extender/logs/fit/plugins/profile/2022_11_09_05_19_17/LAPTOP-HJGTML17.tensorflow_stats.pb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MIDI-song-extender/logs/fit/plugins/profile/2022_11_09_05_19_17/LAPTOP-HJGTML17.trace.json.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MIDI-song-extender/logs/fit/plugins/profile/2022_11_09_05_19_17/LAPTOP-HJGTML17.xplane.pb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MIDI-song-extender/logs/fit/plugins/profile/2022_11_09_05_23_33/LAPTOP-HJGTML17.input_pipeline.pb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MIDI-song-extender/logs/fit/plugins/profile/2022_11_09_05_23_33/LAPTOP-HJGTML17.kernel_stats.pb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MIDI-song-extender/logs/fit/plugins/profile/2022_11_09_05_23_33/LAPTOP-HJGTML17.memory_profile.json.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MIDI-song-extender/logs/fit/plugins/profile/2022_11_09_05_23_33/LAPTOP-HJGTML17.overview_page.pb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MIDI-song-extender/logs/fit/plugins/profile/2022_11_09_05_23_33/LAPTOP-HJGTML17.tensorflow_stats.pb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MIDI-song-extender/logs/fit/plugins/profile/2022_11_09_05_23_33/LAPTOP-HJGTML17.trace.json.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MIDI-song-extender/logs/fit/plugins/profile/2022_11_09_05_23_33/LAPTOP-HJGTML17.xplane.pb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MIDI-song-extender/logs/fit/plugins/profile/2022_11_09_05_38_23/LAPTOP-HJGTML17.input_pipeline.pb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MIDI-song-extender/logs/fit/plugins/profile/2022_11_09_05_38_23/LAPTOP-HJGTML17.kernel_stats.pb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MIDI-song-extender/logs/fit/plugins/profile/2022_11_09_05_38_23/LAPTOP-HJGTML17.memory_profile.json.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MIDI-song-extender/logs/fit/plugins/profile/2022_11_09_05_38_23/LAPTOP-HJGTML17.overview_page.pb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MIDI-song-extender/logs/fit/plugins/profile/2022_11_09_05_38_23/LAPTOP-HJGTML17.tensorflow_stats.pb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MIDI-song-extender/logs/fit/plugins/profile/2022_11_09_05_38_23/LAPTOP-HJGTML17.trace.json.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MIDI-song-extender/logs/fit/plugins/profile/2022_11_09_05_38_23/LAPTOP-HJGTML17.xplane.pb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MIDI-song-extender/logs/fit/plugins/profile/2022_11_09_05_44_40/LAPTOP-HJGTML17.input_pipeline.pb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MIDI-song-extender/logs/fit/plugins/profile/2022_11_09_05_44_40/LAPTOP-HJGTML17.kernel_stats.pb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MIDI-song-extender/logs/fit/plugins/profile/2022_11_09_05_44_40/LAPTOP-HJGTML17.memory_profile.json.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MIDI-song-extender/logs/fit/plugins/profile/2022_11_09_05_44_40/LAPTOP-HJGTML17.overview_page.pb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MIDI-song-extender/logs/fit/plugins/profile/2022_11_09_05_44_40/LAPTOP-HJGTML17.tensorflow_stats.pb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MIDI-song-extender/logs/fit/plugins/profile/2022_11_09_05_44_40/LAPTOP-HJGTML17.trace.json.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MIDI-song-extender/logs/fit/plugins/profile/2022_11_09_05_44_40/LAPTOP-HJGTML17.xplane.pb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MIDI-song-extender/logs/fit/plugins/profile/2022_11_09_05_46_29/LAPTOP-HJGTML17.input_pipeline.pb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MIDI-song-extender/logs/fit/plugins/profile/2022_11_09_05_46_29/LAPTOP-HJGTML17.kernel_stats.pb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MIDI-song-extender/logs/fit/plugins/profile/2022_11_09_05_46_29/LAPTOP-HJGTML17.memory_profile.json.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MIDI-song-extender/logs/fit/plugins/profile/2022_11_09_05_46_29/LAPTOP-HJGTML17.overview_page.pb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MIDI-song-extender/logs/fit/plugins/profile/2022_11_09_05_46_29/LAPTOP-HJGTML17.tensorflow_stats.pb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MIDI-song-extender/logs/fit/plugins/profile/2022_11_09_05_46_29/LAPTOP-HJGTML17.trace.json.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MIDI-song-extender/logs/fit/plugins/profile/2022_11_09_05_46_29/LAPTOP-HJGTML17.xplane.pb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MIDI-song-extender/logs/fit/plugins/profile/2022_11_09_05_50_38/LAPTOP-HJGTML17.input_pipeline.pb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MIDI-song-extender/logs/fit/plugins/profile/2022_11_09_05_50_38/LAPTOP-HJGTML17.kernel_stats.pb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MIDI-song-extender/logs/fit/plugins/profile/2022_11_09_05_50_38/LAPTOP-HJGTML17.memory_profile.json.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MIDI-song-extender/logs/fit/plugins/profile/2022_11_09_05_50_38/LAPTOP-HJGTML17.overview_page.pb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MIDI-song-extender/logs/fit/plugins/profile/2022_11_09_05_50_38/LAPTOP-HJGTML17.tensorflow_stats.pb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MIDI-song-extender/logs/fit/plugins/profile/2022_11_09_05_50_38/LAPTOP-HJGTML17.trace.json.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MIDI-song-extender/logs/fit/plugins/profile/2022_11_09_05_50_38/LAPTOP-HJGTML17.xplane.pb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MIDI-song-extender/logs/fit/plugins/profile/2022_11_09_05_51_06/LAPTOP-HJGTML17.input_pipeline.pb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MIDI-song-extender/logs/fit/plugins/profile/2022_11_09_05_51_06/LAPTOP-HJGTML17.kernel_stats.pb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MIDI-song-extender/logs/fit/plugins/profile/2022_11_09_05_51_06/LAPTOP-HJGTML17.memory_profile.json.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MIDI-song-extender/logs/fit/plugins/profile/2022_11_09_05_51_06/LAPTOP-HJGTML17.overview_page.pb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MIDI-song-extender/logs/fit/plugins/profile/2022_11_09_05_51_06/LAPTOP-HJGTML17.tensorflow_stats.pb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MIDI-song-extender/logs/fit/plugins/profile/2022_11_09_05_51_06/LAPTOP-HJGTML17.trace.json.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MIDI-song-extender/logs/fit/plugins/profile/2022_11_09_05_51_06/LAPTOP-HJGTML17.xplane.pb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MIDI-song-extender/logs/fit/plugins/profile/2022_11_09_05_57_50/LAPTOP-HJGTML17.input_pipeline.pb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MIDI-song-extender/logs/fit/plugins/profile/2022_11_09_05_57_50/LAPTOP-HJGTML17.kernel_stats.pb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MIDI-song-extender/logs/fit/plugins/profile/2022_11_09_05_57_50/LAPTOP-HJGTML17.memory_profile.json.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MIDI-song-extender/logs/fit/plugins/profile/2022_11_09_05_57_50/LAPTOP-HJGTML17.overview_page.pb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MIDI-song-extender/logs/fit/plugins/profile/2022_11_09_05_57_50/LAPTOP-HJGTML17.tensorflow_stats.pb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MIDI-song-extender/logs/fit/plugins/profile/2022_11_09_05_57_50/LAPTOP-HJGTML17.trace.json.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MIDI-song-extender/logs/fit/plugins/profile/2022_11_09_05_57_50/LAPTOP-HJGTML17.xplane.pb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MIDI-song-extender/logs/fit/plugins/profile/2022_11_09_06_05_43/LAPTOP-HJGTML17.input_pipeline.pb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MIDI-song-extender/logs/fit/plugins/profile/2022_11_09_06_05_43/LAPTOP-HJGTML17.kernel_stats.pb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MIDI-song-extender/logs/fit/plugins/profile/2022_11_09_06_05_43/LAPTOP-HJGTML17.memory_profile.json.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MIDI-song-extender/logs/fit/plugins/profile/2022_11_09_06_05_43/LAPTOP-HJGTML17.overview_page.pb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MIDI-song-extender/logs/fit/plugins/profile/2022_11_09_06_05_43/LAPTOP-HJGTML17.tensorflow_stats.pb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MIDI-song-extender/logs/fit/plugins/profile/2022_11_09_06_05_43/LAPTOP-HJGTML17.trace.json.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MIDI-song-extender/logs/fit/plugins/profile/2022_11_09_06_05_43/LAPTOP-HJGTML17.xplane.pb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MIDI-song-extender/logs/fit/train/events.out.tfevents.1667620727.LAPTOP-HJGTML17.14864.7.v2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MIDI-song-extender/logs/fit/train/events.out.tfevents.1667620846.LAPTOP-HJGTML17.14864.9.v2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MIDI-song-extender/logs/fit/train/events.out.tfevents.1667620976.LAPTOP-HJGTML17.14864.11.v2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MIDI-song-extender/logs/fit/train/events.out.tfevents.1667621083.LAPTOP-HJGTML17.14864.13.v2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MIDI-song-extender/logs/fit/train/events.out.tfevents.1667621206.LAPTOP-HJGTML17.14864.15.v2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MIDI-song-extender/logs/fit/train/events.out.tfevents.1667621340.LAPTOP-HJGTML17.14864.17.v2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MIDI-song-extender/logs/fit/train/events.out.tfevents.1667621508.LAPTOP-HJGTML17.14864.19.v2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MIDI-song-extender/logs/fit/train/events.out.tfevents.1667968962.LAPTOP-HJGTML17.9704.0.v2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MIDI-song-extender/logs/fit/train/events.out.tfevents.1667969066.LAPTOP-HJGTML17.17800.0.v2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MIDI-song-extender/logs/fit/train/events.out.tfevents.1667969161.LAPTOP-HJGTML17.17800.2.v2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MIDI-song-extender/logs/fit/train/events.out.tfevents.1667969259.LAPTOP-HJGTML17.17800.4.v2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MIDI-song-extender/logs/fit/train/events.out.tfevents.1667969337.LAPTOP-HJGTML17.17800.6.v2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MIDI-song-extender/logs/fit/train/events.out.tfevents.1667969431.LAPTOP-HJGTML17.17800.8.v2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MIDI-song-extender/logs/fit/train/events.out.tfevents.1667969529.LAPTOP-HJGTML17.17800.10.v2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MIDI-song-extender/logs/fit/train/events.out.tfevents.1667969655.LAPTOP-HJGTML17.17800.12.v2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MIDI-song-extender/logs/fit/train/events.out.tfevents.1667969745.LAPTOP-HJGTML17.17800.14.v2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MIDI-song-extender/logs/fit/train/events.out.tfevents.1667971155.LAPTOP-HJGTML17.17800.16.v2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MIDI-song-extender/logs/fit/train/events.out.tfevents.1667971411.LAPTOP-HJGTML17.17800.18.v2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MIDI-song-extender/logs/fit/train/events.out.tfevents.1667972231.LAPTOP-HJGTML17.16012.0.v2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MIDI-song-extender/logs/fit/train/events.out.tfevents.1667972273.LAPTOP-HJGTML17.16012.1.v2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MIDI-song-extender/logs/fit/train/events.out.tfevents.1667972299.LAPTOP-HJGTML17.27620.0.v2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MIDI-song-extender/logs/fit/train/events.out.tfevents.1667972678.LAPTOP-HJGTML17.27620.2.v2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MIDI-song-extender/logs/fit/train/events.out.tfevents.1667972787.LAPTOP-HJGTML17.27620.4.v2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MIDI-song-extender/logs/fit/train/events.out.tfevents.1667973034.LAPTOP-HJGTML17.27620.5.v2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MIDI-song-extender/logs/fit/train/events.out.tfevents.1667973063.LAPTOP-HJGTML17.27620.6.v2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MIDI-song-extender/logs/fit/train/events.out.tfevents.1667973468.LAPTOP-HJGTML17.27620.8.v2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MIDI-song-extender/logs/fit/train/events.out.tfevents.1667973940.LAPTOP-HJGTML17.27620.10.v2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MIDI-song-extender/logs/fit/train/events.out.tfevents.1668485748.LAPTOP-HJGTML17.37988.0.v2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MIDI-song-extender/logs/fit/train/events.out.tfevents.1668486188.LAPTOP-HJGTML17.37988.1.v2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MIDI-song-extender/logs/fit/train/events.out.tfevents.1668486217.LAPTOP-HJGTML17.37988.2.v2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MIDI-song-extender/logs/fit/train/events.out.tfevents.1668486308.LAPTOP-HJGTML17.37988.3.v2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MIDI-song-extender/logs/fit/train/events.out.tfevents.1668486362.LAPTOP-HJGTML17.37988.4.v2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MIDI-song-extender/logs/fit/train/events.out.tfevents.1668486502.LAPTOP-HJGTML17.37988.5.v2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MIDI-song-extender/logs/fit/train/events.out.tfevents.1668486826.LAPTOP-HJGTML17.37988.6.v2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MIDI-song-extender/logs/fit/train/events.out.tfevents.1668486906.LAPTOP-HJGTML17.37988.7.v2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MIDI-song-extender/logs/fit/train/events.out.tfevents.1668486945.LAPTOP-HJGTML17.37988.8.v2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MIDI-song-extender/logs/fit/train/events.out.tfevents.1668487196.LAPTOP-HJGTML17.37988.9.v2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MIDI-song-extender/logs/fit/train/events.out.tfevents.1668487216.LAPTOP-HJGTML17.37988.10.v2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MIDI-song-extender/logs/fit/train/events.out.tfevents.1668487282.LAPTOP-HJGTML17.37988.11.v2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MIDI-song-extender/logs/fit/train/events.out.tfevents.1668487585.LAPTOP-HJGTML17.37988.12.v2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MIDI-song-extender/logs/fit/train/events.out.tfevents.1668487627.LAPTOP-HJGTML17.37988.13.v2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MIDI-song-extender/logs/fit/train/events.out.tfevents.1668487650.LAPTOP-HJGTML17.37988.14.v2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MIDI-song-extender/logs/fit/train/events.out.tfevents.1668487680.LAPTOP-HJGTML17.37988.15.v2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MIDI-song-extender/logs/fit/train/events.out.tfevents.1668487819.LAPTOP-HJGTML17.37988.16.v2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MIDI-song-extender/logs/fit/train/events.out.tfevents.1668487894.LAPTOP-HJGTML17.37988.17.v2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MIDI-song-extender/logs/fit/train/events.out.tfevents.1668487916.LAPTOP-HJGTML17.37988.18.v2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MIDI-song-extender/logs/fit/train/events.out.tfevents.1668488205.LAPTOP-HJGTML17.37988.19.v2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MIDI-song-extender/logs/fit/train/events.out.tfevents.1668488226.LAPTOP-HJGTML17.37988.20.v2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MIDI-song-extender/logs/fit/train/events.out.tfevents.1668488341.LAPTOP-HJGTML17.37988.21.v2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MIDI-song-extender/logs/fit/train/events.out.tfevents.1668488528.LAPTOP-HJGTML17.37988.22.v2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MIDI-song-extender/logs/fit/train/events.out.tfevents.1668488558.LAPTOP-HJGTML17.37988.23.v2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MIDI-song-extender/logs/fit/train/events.out.tfevents.1668488579.LAPTOP-HJGTML17.37988.24.v2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MIDI-song-extender/logs/fit/train/events.out.tfevents.1668569669.LAPTOP-HJGTML17.36492.0.v2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MIDI-song-extender/logs/fit/train/events.out.tfevents.1668569696.LAPTOP-HJGTML17.36492.1.v2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MIDI-song-extender/logs/fit/train/events.out.tfevents.1668569905.LAPTOP-HJGTML17.36492.2.v2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MIDI-song-extender/logs/fit/train/events.out.tfevents.1668569982.LAPTOP-HJGTML17.36492.3.v2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MIDI-song-extender/logs/fit/train/events.out.tfevents.1668570014.LAPTOP-HJGTML17.36492.4.v2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MIDI-song-extender/logs/fit/train/events.out.tfevents.1668570105.LAPTOP-HJGTML17.36492.5.v2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MIDI-song-extender/logs/fit/train/events.out.tfevents.1668570359.LAPTOP-HJGTML17.28280.0.v2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MIDI-song-extender/logs/fit/train/events.out.tfevents.1668570788.LAPTOP-HJGTML17.16424.0.v2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MIDI-song-extender/logs/fit/train/events.out.tfevents.1668570822.LAPTOP-HJGTML17.16424.1.v2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MIDI-song-extender/logs/fit/validation/events.out.tfevents.1667620821.LAPTOP-HJGTML17.14864.8.v2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MIDI-song-extender/logs/fit/validation/events.out.tfevents.1667620952.LAPTOP-HJGTML17.14864.10.v2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MIDI-song-extender/logs/fit/validation/events.out.tfevents.1667621058.LAPTOP-HJGTML17.14864.12.v2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MIDI-song-extender/logs/fit/validation/events.out.tfevents.1667621182.LAPTOP-HJGTML17.14864.14.v2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MIDI-song-extender/logs/fit/validation/events.out.tfevents.1667621315.LAPTOP-HJGTML17.14864.16.v2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MIDI-song-extender/logs/fit/validation/events.out.tfevents.1667621484.LAPTOP-HJGTML17.14864.18.v2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MIDI-song-extender/logs/fit/validation/events.out.tfevents.1667969141.LAPTOP-HJGTML17.17800.1.v2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MIDI-song-extender/logs/fit/validation/events.out.tfevents.1667969240.LAPTOP-HJGTML17.17800.3.v2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MIDI-song-extender/logs/fit/validation/events.out.tfevents.1667969320.LAPTOP-HJGTML17.17800.5.v2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MIDI-song-extender/logs/fit/validation/events.out.tfevents.1667969414.LAPTOP-HJGTML17.17800.7.v2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MIDI-song-extender/logs/fit/validation/events.out.tfevents.1667969510.LAPTOP-HJGTML17.17800.9.v2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MIDI-song-extender/logs/fit/validation/events.out.tfevents.1667969638.LAPTOP-HJGTML17.17800.11.v2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MIDI-song-extender/logs/fit/validation/events.out.tfevents.1667969727.LAPTOP-HJGTML17.17800.13.v2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MIDI-song-extender/logs/fit/validation/events.out.tfevents.1667969809.LAPTOP-HJGTML17.17800.15.v2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MIDI-song-extender/logs/fit/validation/events.out.tfevents.1667971357.LAPTOP-HJGTML17.17800.17.v2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MIDI-song-extender/logs/fit/validation/events.out.tfevents.1667972383.LAPTOP-HJGTML17.27620.1.v2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MIDI-song-extender/logs/fit/validation/events.out.tfevents.1667972749.LAPTOP-HJGTML17.27620.3.v2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MIDI-song-extender/logs/fit/validation/events.out.tfevents.1667973151.LAPTOP-HJGTML17.27620.7.v2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MIDI-song-extender/logs/fit/validation/events.out.tfevents.1667973575.LAPTOP-HJGTML17.27620.9.v2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MIDI-song-extender/logs/fit/validation/events.out.tfevents.1667974021.LAPTOP-HJGTML17.27620.11.v2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MIDI-song-extender/musicautobot/utils/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MIDI-song-extender/transformer-steven-final-v1/keras_metadata.pb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MIDI-song-extender/transformer-steven-final-v1/saved_model.pb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MIDI-song-extender/transformer-steven-final-v1/variables/variables.data-00000-of-00001" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MIDI-song-extender/transformer-steven-final-v1/variables/variables.index" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MIDI-song-extender/transformer-steven-final-v2/keras_metadata.pb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MIDI-song-extender/transformer-steven-final-v2/saved_model.pb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MIDI-song-extender/transformer-steven-final-v2/variables/variables.data-00000-of-00001" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MIDI-song-extender/transformer-steven-final-v2/variables/variables.index" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MIDI-song-extender/transformer_train.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Comic Relief.mid" beforeDir="false" afterPath="$PROJECT_DIR$/MIDI-song-extender/Comic Relief.mid" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/file_processing.py" beforeDir="false" afterPath="$PROJECT_DIR$/MIDI-song-extender/file_processing.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/generator.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/musicautobot/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/MIDI-song-extender/musicautobot/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/musicautobot/config.py" beforeDir="false" afterPath="$PROJECT_DIR$/MIDI-song-extender/musicautobot/config.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/musicautobot/multitask_transformer/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/MIDI-song-extender/musicautobot/multitask_transformer/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/musicautobot/multitask_transformer/dataloader.py" beforeDir="false" afterPath="$PROJECT_DIR$/MIDI-song-extender/musicautobot/multitask_transformer/dataloader.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/musicautobot/multitask_transformer/learner.py" beforeDir="false" afterPath="$PROJECT_DIR$/MIDI-song-extender/musicautobot/multitask_transformer/learner.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/musicautobot/multitask_transformer/model.py" beforeDir="false" afterPath="$PROJECT_DIR$/MIDI-song-extender/musicautobot/multitask_transformer/model.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/musicautobot/multitask_transformer/transform.py" beforeDir="false" afterPath="$PROJECT_DIR$/MIDI-song-extender/musicautobot/multitask_transformer/transform.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/musicautobot/music_transformer/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/MIDI-song-extender/musicautobot/music_transformer/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/musicautobot/music_transformer/dataloader.py" beforeDir="false" afterPath="$PROJECT_DIR$/MIDI-song-extender/musicautobot/music_transformer/dataloader.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/musicautobot/music_transformer/learner.py" beforeDir="false" afterPath="$PROJECT_DIR$/MIDI-song-extender/musicautobot/music_transformer/learner.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/musicautobot/music_transformer/model.py" beforeDir="false" afterPath="$PROJECT_DIR$/MIDI-song-extender/musicautobot/music_transformer/model.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/musicautobot/music_transformer/transform.py" beforeDir="false" afterPath="$PROJECT_DIR$/MIDI-song-extender/musicautobot/music_transformer/transform.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/musicautobot/numpy_encode.py" beforeDir="false" afterPath="$PROJECT_DIR$/MIDI-song-extender/musicautobot/numpy_encode.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/musicautobot/utils/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/MIDI-song-extender/logs/fit/plugins/profile/2022_11_09_04_44_30/LAPTOP-HJGTML17.kernel_stats.pb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/musicautobot/utils/attention_mask.py" beforeDir="false" afterPath="$PROJECT_DIR$/MIDI-song-extender/musicautobot/utils/attention_mask.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/musicautobot/utils/file_processing.py" beforeDir="false" afterPath="$PROJECT_DIR$/MIDI-song-extender/musicautobot/utils/file_processing.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/musicautobot/utils/lamb.py" beforeDir="false" afterPath="$PROJECT_DIR$/MIDI-song-extender/musicautobot/utils/lamb.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/musicautobot/utils/midifile.py" beforeDir="false" afterPath="$PROJECT_DIR$/MIDI-song-extender/musicautobot/utils/midifile.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/musicautobot/utils/setup_musescore.py" beforeDir="false" afterPath="$PROJECT_DIR$/MIDI-song-extender/musicautobot/utils/setup_musescore.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/musicautobot/utils/stacked_dataloader.py" beforeDir="false" afterPath="$PROJECT_DIR$/MIDI-song-extender/musicautobot/utils/stacked_dataloader.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/musicautobot/utils/top_k_top_p.py" beforeDir="false" afterPath="$PROJECT_DIR$/MIDI-song-extender/musicautobot/utils/top_k_top_p.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/musicautobot/vocab.py" beforeDir="false" afterPath="$PROJECT_DIR$/MIDI-song-extender/musicautobot/vocab.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output.mid" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/paths.txt" beforeDir="false" afterPath="$PROJECT_DIR$/MIDI-song-extender/paths.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/preprocessor.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/MIDI-song-extender/preprocessor.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/raw_encoding.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/MIDI-song-extender/test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_values_x.npy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_values_y.npy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wii.mid" beforeDir="false" afterPath="$PROJECT_DIR$/MIDI-song-extender/wii.mid" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2FBLQORelaGeu0xr9YOLsQMxDrl" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/drago/PycharmProjects/2022-t2-transformer/test.py&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;project.propVCSSupport.DirectoryMappings&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\drago\PycharmProjects\2022-t2-transformer" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\drago\PycharmProjects\2022-t2-transformer" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Python.test">
+    <configuration name="preprocessor" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
+      <module name="2022-t2-transformer" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="C:\Users\drago\anaconda3\python.exe" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="C:\Users\drago\PycharmProjects\2022-t2-transformer\preprocessor.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="test" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
+      <module name="2022-t2-transformer" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="C:\Users\drago\anaconda3\python.exe" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Python.preprocessor" />
+      <item itemvalue="Python.test" />
+    </list>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="4259db1c-0b0c-435d-843f-22172d6c25a1" name="Changes" comment="" />
+      <created>1663960515699</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1663960515699</updated>
+    </task>
+    <task id="LOCAL-00001" summary="Sprint 1 progress">
+      <created>1664220648923</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1664220648923</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Sprint 2 progress">
+      <created>1665428040443</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1665428040443</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Sprint 2 progress">
+      <created>1665428318226</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1665428318227</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Sprint 2 progress">
+      <created>1665430037475</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1665430037475</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Sprint 2 progress">
+      <created>1665430203118</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1665430203118</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Sprint 2 progress">
+      <created>1665430555373</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1665430555373</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Sprint 2 progress">
+      <created>1665430940345</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1665430940345</updated>
+    </task>
+    <task id="LOCAL-00008" summary="update for model.fit testing">
+      <created>1665598879257</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1665598879257</updated>
+    </task>
+    <task id="LOCAL-00009" summary="update sprint 5- UI + model predict pipeline">
+      <created>1667854186738</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1667854186738</updated>
+    </task>
+    <task id="LOCAL-00010" summary="updated generator.ipynb- transformer layout">
+      <created>1668648114436</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1668648114436</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="main" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Sprint 1 progress" />
+    <MESSAGE value="Sprint 2 progress" />
+    <MESSAGE value="update for model.fit testing" />
+    <MESSAGE value="update sprint 5- UI + model predict pipeline" />
+    <MESSAGE value="updated generator.ipynb- transformer layout" />
+    <option name="LAST_COMMIT_MESSAGE" value="updated generator.ipynb- transformer layout" />
+  </component>
+</project>
