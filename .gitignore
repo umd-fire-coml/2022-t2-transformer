@@ -128,7 +128,12 @@ dmypy.json
 # Pyre type checker
 .pyre/
 
-# my files
+# mac files
+.DS_Store
+
+song-clip-triplets.zip
+triplets/
+# steven's files
 MIDI-song-extender/data.npy
 MIDI-song-extender/data_normalized.npy
 MIDI-song-extender/data
