@@ -34,7 +34,7 @@ transformer_train.py: this is a python file that builds and trains a model like 
 
 ##### Supplemental Files
 
-[necessary_files](https://drive.google.com/drive/folders/1u26zC-kGG6o9xCCJDkk5Pd8euF4CjiVD?usp=sharing): google drive folder with data files too large to store in the repo. data.npy contains encoded songs, the data folder contains training data pairs. X files contain 100 length integer arrays that serve as input, and y files contain 2 length arrays that are the labels.
+[necessary_files](https://drive.google.com/drive/folders/1u26zC-kGG6o9xCCJDkk5Pd8euF4CjiVD?usp=sharing): google drive folder with data files too large to store in the repo. data.npy contains encoded songs, the data folder contains training data pairs. X files contain 100 length integer arrays that serve as input, and y files contain 2 length arrays that are the labels. transformer-final is a copy of the folder in this repo, for Google Colab testing purposes.
 
 [transformer training](https://colab.research.google.com/drive/16mGM6uQ-kkLZ_vXgStZWtfSTnu0coDr-?usp=sharing): Colab notebook for training.
 
@@ -87,4 +87,13 @@ You will need to download data.npy to a local directory. Change all filepaths as
 
 Use the generator.ipynb file in this directory. You only need to run the cells in this notebook that correspond with the cells in the Colab notebook.
 
+Take note, musicautobot runs on a depreciated fastai version (1.0.61), which may cause some issues with package installing.
+
 ## Works Cited
+##### Electronic Documents
+##### API Documentation
+[1]K. Team, “Keras documentation: Timeseries classification with a Transformer model,” keras.io. https://keras.io/examples/timeseries/timeseries_transformer_classification/
+##### Article from the Internet
+[2]A. Shaw, “Creating a Pop Music Generator with the Transformer,” Medium, Aug. 14, 2019. https://towardsdatascience.com/creating-a-pop-music-generator-with-the-transformer-5867511b382a
+##### Web Service
+[3]L. N. Ferreira, “ADL Piano MIDI,” GitHub, Dec. 01, 2022. https://github.com/lucasnfe/adl-piano-midi (accessed Dec. 08, 2022).
