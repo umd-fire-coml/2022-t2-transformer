@@ -28,6 +28,28 @@ python3 -m uvicorn main:app --reload
 
 **The `frontend` and `backend` must be run simultaneously, so either run them in separate terminals. Alternatively, run them as background tasks, so the processes don't hang the terminal.**
 
+## Video Demo
+
+We've recorded a video demo of our MVP. You can check it out on YouTube [here](TODO:_REPLACE_LINK)!
+
+## System Architecture
+
+![System Architecture](./images/system-architecture.png)
+
+## Model Architecture
+
+![Model Architecture](./images/model-architecture.png)
+
 ## Directory Guide
 
 The directory guide can be accessed [here](markdown/directory.md).
+
+## Training the Model
+
+To train the model, use the `model_trainer.sh` bash script.Usage can be found [here](./markdown/scripts.md#training-the-model).
+
+## Testing the Model
+
+To test the model, use the `model_tester.sh` bash script.Usage can be found [here](./markdown/scripts.md#testing-the-model).
+
+## Citations
