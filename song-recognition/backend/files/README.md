@@ -1,0 +1,1 @@
+Ignore this directory, used for temporary files during training
