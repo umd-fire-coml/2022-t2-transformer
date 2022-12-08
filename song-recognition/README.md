@@ -30,7 +30,7 @@ python3 -m uvicorn main:app --reload
 
 ## Video Demo
 
-We've recorded a video demo of our MVP. You can check it out on YouTube [here](TODO:_REPLACE_LINK)!
+We've recorded a video demo of our MVP. You can check it out on YouTube [here](https://youtu.be/F2c38w90WNo)!
 
 ## System Architecture
 
