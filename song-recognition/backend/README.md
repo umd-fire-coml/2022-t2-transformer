@@ -1,19 +1,16 @@
 ## Usage
+
 **From the root directory**
 
 1. Setup environment
    ```bash
    bash scripts/setup_env.sh
    ```
-1. Activate environment
-   ```
-   source .venv/bin/activate
 1. Run server
    ```bash
    cd backend
    uvicorn main:app --reload
    ```
-
 
 ## Development
 
