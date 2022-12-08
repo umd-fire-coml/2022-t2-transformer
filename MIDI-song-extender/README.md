@@ -1,4 +1,4 @@
-# MIDI song extender
+# MIDI Song Extender
 
 ## System Architecture
 
@@ -34,18 +34,18 @@ transformer_train.py: this is a python file that builds and trains a model like 
 
 ##### Supplemental Files
 
-https://drive.google.com/drive/folders/1u26zC-kGG6o9xCCJDkk5Pd8euF4CjiVD?usp=sharing: google drive folder with data files too large to store in the repo. data.npy contains encoded songs, the data folder contains training data pairs. X files contain 100 length integer arrays that serve as input, and y files contain 2 length arrays that are the labels.
+[necessary_files](https://drive.google.com/drive/folders/1u26zC-kGG6o9xCCJDkk5Pd8euF4CjiVD?usp=sharing): google drive folder with data files too large to store in the repo. data.npy contains encoded songs, the data folder contains training data pairs. X files contain 100 length integer arrays that serve as input, and y files contain 2 length arrays that are the labels.
 
-https://colab.research.google.com/drive/16mGM6uQ-kkLZ_vXgStZWtfSTnu0coDr-?usp=sharing: Colab notebook for training.
+[transformer training](https://colab.research.google.com/drive/16mGM6uQ-kkLZ_vXgStZWtfSTnu0coDr-?usp=sharing): Colab notebook for training.
 
-https://colab.research.google.com/drive/1yJQdfcS7pSXwxYV0oiD0-6jvkowuLVqO?usp=sharing: Colab notebook for testing.
+[transformer testing](https://colab.research.google.com/drive/1yJQdfcS7pSXwxYV0oiD0-6jvkowuLVqO?usp=sharing): Colab notebook for testing.
 
 ## Training Instructions
 Training uses data located in the supplementary [google drive folder](https://drive.google.com/drive/folders/1u26zC-kGG6o9xCCJDkk5Pd8euF4CjiVD?usp=sharing). Training can be done either locally or through Google Colab. You don't need data.npy for training.
 
 ##### If using Google Colab:
 
-Create a copy of the Colab notebook ["transformer training"](https://colab.research.google.com/drive/16mGM6uQ-kkLZ_vXgStZWtfSTnu0coDr-?usp=sharing).
+Create a copy of the Colab notebook [transformer training](https://colab.research.google.com/drive/16mGM6uQ-kkLZ_vXgStZWtfSTnu0coDr-?usp=sharing).
 
 Download the data folder and upload it to a folder in your personal google drive. 
 
@@ -67,7 +67,7 @@ Testing also uses data located in the [google drive folder](https://drive.google
 
 ##### If using Google Colab:
 
-Create a copy of the Colab notebook ["transformer testing"](https://colab.research.google.com/drive/1yJQdfcS7pSXwxYV0oiD0-6jvkowuLVqO?usp=sharing).
+Create a copy of the Colab notebook [transformer testing](https://colab.research.google.com/drive/1yJQdfcS7pSXwxYV0oiD0-6jvkowuLVqO?usp=sharing).
 
 Download data.npy and upload it to a folder in your personal google drive. Make sure a suitable model is also in the folder.
 

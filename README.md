@@ -16,4 +16,4 @@ Check out our HuggingFace demo here! (will implement later)
 
 You can also take a look by watching this demo video. (will implement later)
 
-See our project [here](MIDI-song-extender).
+See our project details [here](MIDI-song-extender).
