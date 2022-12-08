@@ -53,3 +53,10 @@ To train the model, use the `model_trainer.sh` bash script.Usage can be found [h
 To test the model, use the `model_tester.sh` bash script.Usage can be found [here](./markdown/scripts.md#testing-the-model).
 
 ## Citations
+
+[1] Florian Schroff, Dmitry Kalenichenko, and James Philbin. 2015. FaceNet: A unified embedding for face recognition and clustering. (June 2015). Retrieved December 7, 2022 from https://arxiv.org/abs/1503.03832 
+
+[2] Silva-Reyes, Andree & Martinez-Licona, Fabiola & Licona, Alma. (2018). Cover Song Recognition Using Machine Learning Techniques. Research in Computing Science. 147. 9-21. 10.13053/rcs-147-4-1. 
+
+[3] Ashish Vaswani et al. 2017. Attention is all you need. (December 2017). Retrieved December 7, 2022 from https://doi.org/10.48550/arXiv.1706.03762 
+
