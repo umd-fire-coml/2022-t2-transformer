@@ -1,4 +1,13 @@
 # Further Info
+## Model Architecture
+Here is the architecture for a transformer_encoder block:
+
+![transformer_encoder block](model-1.png)
+
+Here is the architecture for our final model:
+
+![entire model](model-2.png)
+
 ## Directory Guide
 musicautobot folder: this contains the encoder/decoder we use, found from [here](https://towardsdatascience.com/creating-a-pop-music-generator-with-the-transformer-5867511b382a).
 
@@ -9,6 +18,8 @@ Comic Relief.mid, wii.mid: these are our test midi files.
 file_preprocessing.py: this was used to preprocess the adl-piano-midi dataset by merging all the songs into one folder.
 
 generator.ipynb: this trains and tests the model locally.
+
+model-1.png, model-2.png: files for model architecture visualization
 
 paths.txt: this is a file generated during preprocessing.
 
