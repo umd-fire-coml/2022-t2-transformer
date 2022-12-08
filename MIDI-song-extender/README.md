@@ -1,4 +1,30 @@
 # Further Info
+## Directory Guide
+musicautobot folder: this contains the encoder/decoder we use, found from [here](https://towardsdatascience.com/creating-a-pop-music-generator-with-the-transformer-5867511b382a).
+
+transformer-final folder: this is our final trained model.
+
+Comic Relief.mid, wii.mid: these are our test midi files.
+
+file_preprocessing.py: this was used to preprocess the adl-piano-midi dataset by merging all the songs into one folder.
+
+generator.ipynb: this trains and tests the model locally.
+
+paths.txt: this is a file generated during preprocessing.
+
+preprocessor.ipynb: this takes the midi files in adl-piano-midi folder and turns them into data.npy (an array of encoded songs) and training data.
+
+test.py: this is an exploration and test of the midi encoding system.
+
+transformer_train.py: this is a python file that builds and trains a model like in generator.ipynb.
+
+##### Supplemental Files
+
+https://drive.google.com/drive/folders/1u26zC-kGG6o9xCCJDkk5Pd8euF4CjiVD?usp=sharing: google drive folder with data files too large to store in the repo. data.npy contains encoded songs, the data folder contains training data pairs. X files contain 100 length integer arrays that serve as input, and y files contain 2 length arrays that are the labels.
+
+https://colab.research.google.com/drive/16mGM6uQ-kkLZ_vXgStZWtfSTnu0coDr-?usp=sharing: Colab notebook for training.
+
+https://colab.research.google.com/drive/1yJQdfcS7pSXwxYV0oiD0-6jvkowuLVqO?usp=sharing: Colab notebook for testing.
 
 ## Training Instructions
 Training uses data located in the supplementary [google drive folder](https://drive.google.com/drive/folders/1u26zC-kGG6o9xCCJDkk5Pd8euF4CjiVD?usp=sharing). Training can be done either locally or through Google Colab. You don't need data.npy for training.
