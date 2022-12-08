@@ -38,7 +38,7 @@ We've recorded a video demo of our MVP. You can check it out on YouTube [here](T
 
 ## Model Architecture
 
-![Model Architecture](./images/model-architecture.png)
+![Model Architecture](./images/model_architecture.png)
 
 ## Directory Guide
 
