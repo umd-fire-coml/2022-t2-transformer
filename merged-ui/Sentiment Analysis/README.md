@@ -8,21 +8,21 @@
 ## Directory Guide
 Dataset_Generation.ipynb: Colab notebook for dataset generation.
 
-GUI_SST2.ipynb: Colab notebook to create gradio UI just for sentiment analysis application.  
+GUI_SST2.ipynb: Colab notebook to create a gradio UI just for sentiment analysis application.  
 
-sentiment_analysis.ipynb: Colab notebook for end-to-end. From procession to training. 
+sentiment_analysis.ipynb: Colab notebook to perform end-to-end analysis i.e from processing to training.
 
 model_arch.png, system_arch.png: files for model architecture and system architecture visualization
 
-## Pretrained Models
-Please find pretrained models here: https://drive.google.com/drive/folders/1gqyg95DL7c4_n7-QuoSmMepy3_pa5LAt?usp=sharing
+## Pre-trained Models
+Please find pre-trained models here: https://drive.google.com/drive/folders/1gqyg95DL7c4_n7-QuoSmMepy3_pa5LAt?usp=sharing
 
 ## Training Instructions
 ##### For Google Colab:
 
 Create a copy of the Colab notebook sentiment_analysis.ipynb.
 
-The notebook is self sufficient. We are insatlling all the required packages and dowloading required datasets in the notebook.
+The notebook is self sufficient. We are installing all the required packages and downloading required datasets in the notebook.
 
 Mount the Google drive and change the path to your folder to save checkpoints and the model after training.
 
