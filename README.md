@@ -22,13 +22,13 @@ See our project details [here](MIDI-song-extender).
 ### Poem Generation
 This project is a poem generator model. User will inpute the start of the poem i.e. a word or a sentence and the model will auto generate the next line of the peom. This model is based on distilGPT2 and fine tunned with a Gutenberg Poetry Corpus. 
 
-See our project details [here] (merged-ui).
+See our project details [here](merged-ui).
 
 You can also take a look by watching this [demo video](https://youtu.be/51QugyAd0x4).
 
 ### Sentiment Analysis
 This project is a sentiment analysis model. User will inpute a sentence and the model will output the sentiment (Positive or Negative) of the input sentence. This model is based on distilBERT and DistilRoberta, and fine tunned with SST2 dataset. 
 
-See our project details [here] (merged-ui).
+See our project details [here](merged-ui).
 
 You can also take a look by watching this [demo video](https://youtu.be/51QugyAd0x4).
