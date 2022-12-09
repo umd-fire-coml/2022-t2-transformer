@@ -1,7 +1,7 @@
 # MIDI Song Extender
 
 ## System Architecture
-![transformer_encoder block](chart.png)
+![transformer_encoder block](Chart.png)
 ## Model Architecture
 Here is the architecture for a transformer_encoder block:
 
