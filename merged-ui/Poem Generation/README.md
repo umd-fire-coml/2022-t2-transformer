@@ -20,7 +20,7 @@ Please find pre-trained models here: https://drive.google.com/drive/folders/1-Kg
 
 Create a copy of the Colab notebook poem generation.ipynb.
 
-The notebook is self-sufficient. We are installing all the required packages and downloading required datasets in the notebook.
+The notebook is self-sufficient. We are installing all the required packages and downloading the required datasets in the notebook.
 
 Mount the Google drive and change the path to your folder to save checkpoints and the model after training.
 
