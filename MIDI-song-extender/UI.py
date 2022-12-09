@@ -65,7 +65,10 @@ def midi_predict(model, test, num_notes):
     res = predict_music(model, test, num_notes)
     output = idxenc2stream(res.astype("int"), MusicVocab.create())
     output.write('midi',music_gen_base_path+"output_demo.mid")
-
+    path_mid_file = music_gen_base_path + "output_demo.mid"
+    path_wav_file = music_gen_base_path + "output_demo.wav"
+    # need timidity for this
+    subprocess.call(['timidity', path_mid_file, "-Ow", "-o", path_wav_file])
     return
 
 def inference_music_gen(audio, num_notes):

@@ -1,7 +1,7 @@
 # MIDI Song Extender
 
 ## System Architecture
-![transformer_encoder block](Chart.png)
+![architecture](image.png)
 ## Model Architecture
 Here is the architecture for a transformer_encoder block:
 
@@ -22,7 +22,7 @@ file_preprocessing.py: this was used to preprocess the adl-piano-midi dataset by
 
 generator.ipynb: this trains and tests the model locally.
 
-model-1.png, model-2.png, chart.png: files for model architecture and system architecture visualization
+model-1.png, model-2.png, image.png: files for model architecture and system architecture visualization
 
 paths.txt: this is a file generated during preprocessing.
 
@@ -31,6 +31,8 @@ preprocessor.ipynb: this takes the midi files in adl-piano-midi folder and turns
 test.py: this is an exploration and test of the midi encoding system.
 
 transformer_train.py: this is a python file that builds and trains a model like in generator.ipynb.
+
+ui.py: this is a python file that runs the HuggingFace demo.
 
 ##### Supplemental Files
 
