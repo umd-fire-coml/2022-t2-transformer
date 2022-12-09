@@ -20,6 +20,7 @@ embedding = midi2idxenc('Comic Relief.mid', MusicVocab.create())
 
 print(list(MusicVocab.create().stoi.items()))
 print(embedding)
+print(embedding.shape)
 x = np.load("data/x_0.npy")
 print(x[0] * 311)
 output = idxenc2stream((x[0] * 311).astype("int"), MusicVocab.create())
