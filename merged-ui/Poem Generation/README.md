@@ -6,21 +6,21 @@
 ![High Level System Architecture](model_arch2.png)
 
 ## Directory Guide
-UI_poem_gen.ipynb: Colab notebook to create gradio UI just for poem generation application.  
+UI_poem_gen.ipynb: Colab notebook to create a gradio UI just for poem generation application.  
 
-poem generation.ipynb: Colab notebook for end-to-end. From procession to model training. 
+poem generation.ipynb: Colab notebook for end-to-end analysis i.e from processing to model training. 
 
 system_arch_pg.png, model_arch2.png: files for system and model architecture visualization
 
-## Pretrained Models
-Please find pretrained models here: https://drive.google.com/drive/folders/1-KgkDgnv6qY5G6_Y4lZ2dkNcXEub-V39?usp=sharing
+## Pre-trained Models
+Please find pre-trained models here: https://drive.google.com/drive/folders/1-KgkDgnv6qY5G6_Y4lZ2dkNcXEub-V39?usp=sharing
 
 ## Training Instructions
 ##### For Google Colab:
 
 Create a copy of the Colab notebook poem generation.ipynb.
 
-The notebook is self sufficient. We are insatlling all the required packages and dowloading required datasets in the notebook.
+The notebook is self-sufficient. We are installing all the required packages and downloading required datasets in the notebook.
 
 Mount the Google drive and change the path to your folder to save checkpoints and the model after training.
 
@@ -35,7 +35,7 @@ Mount the Google drive and change the path to your folder path.
 
 Make sure your folder path contains pre-trained model.
 
-Run model performance and inference cells, changing the path as necessary.
+Run model performance and inference cells, by changing the path as necessary.
 
 ## Works Cited
 ##### Research Work
@@ -45,6 +45,6 @@ Run model performance and inference cells, changing the path as necessary.
 
 
 ##### Article from the Internet
-[4] Hugging face transformers package https://huggingface.co/docs/transformers/index
+[3] Hugging face transformers package https://huggingface.co/docs/transformers/index
 
-[5] Gradio https://gradio.app/
+[4] Gradio https://gradio.app/
