@@ -1,18 +1,18 @@
 # Combined UI of Poem Generation, Sentiment analysis and MIDI Song Extender
 
 ## Directory Guide
-UI.ipynb : Colab notebook to create gradio UI application for poem generation, Sentiment analysis and  MIDI Song Extender.  
+UI.ipynb : Colab notebook to create a gradio UI application for poem generation, Sentiment analysis and  MIDI Song Extender.  
 
 ## Running Instructions
 ##### For Google Colab:
 
 Create a copy of the Colab notebook poem UI.ipynb.
 
-The notebook is self sufficient. We are insatlling all the required packages in the notebook.
+The notebook is self-sufficient. We are installing all the required packages in the notebook.
 
 Mount the Google drive.
 
-You should have pretrained models in your folder. Please refer to corresponding models readme to get model details. 
+You should have pre-trained models in your folder. Please refer to corresponding models readme to get model details. 
 
 Change the path to your folder.
 
