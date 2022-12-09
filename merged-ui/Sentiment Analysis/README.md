@@ -37,7 +37,7 @@ Mount the Google drive and change the path to your folder path.
 
 Make sure your folder path contains pre-trained model.
 
-Run model performance and inference cells, changing the path as necessary.
+Run model performance and inference cells, by changing the path as necessary.
 
 ## Works Cited
 ##### Research Papers
