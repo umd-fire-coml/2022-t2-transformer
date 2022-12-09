@@ -12,8 +12,8 @@ by Steven Zhang, Rahul Dagar, and Kofi Boateng
 
 Our project is a MIDI generation model that takes in the beginning of a MIDI file as a sample and generates original music based off of the given sample. We use an encoder package to compress MIDIs into integer arrays to feed into the model. One note is encoded by 2 integers representing note type and duration. The model takes an input of 50 encoded notes and predicts the next note. To generate more, we loop this process by appending the generated note to the array and feeding the most recent 50 notes back into the model. To train the model, we used the [adl-piano-midi dataset](https://github.com/lucasnfe/adl-piano-midi).
 
-Check out our HuggingFace demo here! (will implement later)
+Check out our HuggingFace demo [here!](https://huggingface.co/spaces/kboaten/MIDI-Audio-Extension)
 
-You can also take a look by watching this demo video. (will implement later)
+You can also take a look by watching this [demo video](https://youtu.be/51QugyAd0x4).
 
 See our project details [here](MIDI-song-extender).

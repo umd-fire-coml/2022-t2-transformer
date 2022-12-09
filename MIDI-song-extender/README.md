@@ -58,7 +58,7 @@ The last cell will load data in batches of 10 and call model.fit on them, then s
 Each call of model.fit should take 3 or 4 minutes using a GPU runtime.
 
 ##### If training locally:
-You will need to download the data folder to a local directory. Change all filepaths as needed.
+You will need to download the data folder to a local directory. Change all filepaths and install packages as needed.
 
 Use the generator.ipynb file in this directory. You only need to run the cells in this notebook that correspond with the cells in the Colab notebook.
 
@@ -83,7 +83,7 @@ We took encoded song samples from data.npy as an example. The last cell calls mi
 
 ##### If testing locally:
 
-You will need to download data.npy to a local directory. Change all filepaths as needed.
+You will need to download data.npy to a local directory. Change all filepaths and install packages as needed.
 
 Use the generator.ipynb file in this directory. You only need to run the cells in this notebook that correspond with the cells in the Colab notebook.
 
