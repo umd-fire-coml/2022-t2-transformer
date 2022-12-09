@@ -33,7 +33,7 @@ Create a copy of the Colab notebook poem generation.ipynb.
 
 Mount the Google drive and change the path to your folder path.
 
-Make sure your folder path contains pre-trained model.
+Make sure your folder path contains a pre-trained model.
 
 Run model performance and inference cells, by changing the path as necessary.
 
